@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=projettut2
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/administrateur/Documents/projet2
-ProjectPath            :=/home/administrateur/Documents/projet2/projettut2
+WorkspacePath          :=/home/administrateur/Documents/git/projet2
+ProjectPath            :=/home/administrateur/Documents/git/projet2/projettut2
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=administrateur
-Date                   :=30/11/21
+Date                   :=01/12/21
 CodeLitePath           :=/home/administrateur/.codelite
 LinkerName             :=gcc
 SharedObjectLinkerName :=gcc -shared -fPIC
@@ -92,7 +92,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/administrateur/Documents/projet2/projettut2/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/administrateur/Documents/git/projet2/projettut2/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
@@ -100,7 +100,7 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
 $(IntermediateDirectory)/instance.c$(ObjectSuffix): instance.c $(IntermediateDirectory)/instance.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/administrateur/Documents/projet2/projettut2/instance.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/instance.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/administrateur/Documents/git/projet2/projettut2/instance.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/instance.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/instance.c$(DependSuffix): instance.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/instance.c$(ObjectSuffix) -MF$(IntermediateDirectory)/instance.c$(DependSuffix) -MM instance.c
 
