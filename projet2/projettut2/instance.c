@@ -42,3 +42,30 @@ void AddIn_instance(instance* inst, int dim, int obj, int val)
 	}
 	inst->tab[dim][obj] = val;
 }
+
+void fill_instance_obj(instance *inst, FILE* fichier, int dim)
+{
+	for (int i = 0; i < inst->n_obj; i++)
+	{
+		fcanf("%d",&inst->tab[dim][i]);
+	}
+}
+
+void fill_instance(instance *inst, FILE *fichier)
+{
+	for (int i = 0; i < inst->n_dim; i++)
+	{
+		fill_instance_obj(inst, fichier, i);
+	}
+}
+
+void Print_instance(instance inst)
+{
+	for (int i = 0; i < inst->n_dim, i++)
+	{
+		for (int j = 0, j < inst->n_obj; j++)
+		{
+			printf("%d | ", inst->tab[i][j]);
+		}
+	}
+}
